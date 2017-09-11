@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+// 泛型用于解释层级结构关系 Array<number>
 // 父<泛型>   父<占位符>   父<变量>  牛<尾巴>
 // 子<实体>   子<具体类>   子<赋值>  鲁迅<郭沫若>
 class Cow<Tail> extends React.PureComponent<CowProps> {
@@ -44,3 +44,4 @@ export class GuoMoRuo {
 interface CowProps {
   tail: any;
 }
+

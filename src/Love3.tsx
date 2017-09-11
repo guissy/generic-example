@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // 泛型用于解释多角关系
-// 爱情<男方，女一号，女二号>
+// 爱情<男一号，女一号，女二号>
 class Love<Boy, Girl1, Girl2> extends React.PureComponent<LoveProps> {
   constructor(props: LoveProps) {
     super(props);
@@ -22,7 +22,6 @@ class Love<Boy, Girl1, Girl2> extends React.PureComponent<LoveProps> {
     return (
       <div style={{fontSize: 18, padding: '20px 0' }}>
         <p>
-          <label>牛: </label>
           <label>{this.toString()}</label>
         </p>
         <p>

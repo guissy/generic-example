@@ -4,6 +4,7 @@ import { LuXun, GuoMoRuo } from './Cow';
 import './App.css';
 import { Love2, LiuLang, ZhiNv } from './Love2';
 import { Love3, JingJing, ZhiZunBao, ZiXia } from './Love3';
+import Sea, { Boy, Girl, Mother, MotherInRow } from './Sea';
 
 class App extends React.Component {
   render() {
@@ -16,6 +17,8 @@ class App extends React.Component {
           <LuXun tail={new GuoMoRuo()} />
           <Love2 boy={new LiuLang()} girl={new ZhiNv()} />
           <Love3 boy={new ZhiZunBao()} girl1={new ZiXia()} girl2={new JingJing()}/>
+          <Sea me={new Girl()} myLove={new Mother()}/>
+          <Sea me={new Boy()} myLove={new MotherInRow()}/>
         </Layout.Content>
       </Layout>
     );

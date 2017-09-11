@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-// 泛型用于解释层级结构关系 Array<number>
+
 // 爱情<男方，女方>
 class Love<Boy, Girl> extends React.PureComponent<LoveProps> {
   constructor(props: LoveProps) {
@@ -19,7 +19,6 @@ class Love<Boy, Girl> extends React.PureComponent<LoveProps> {
     return (
       <div style={{fontSize: 18, padding: '20px 0' }}>
         <p>
-          <label>牛: </label>
           <label>{this.toString()}</label>
         </p>
         <p>
